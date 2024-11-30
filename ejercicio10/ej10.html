@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejemplo de Plugins jQuery</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+    <link rel="stylesheet" href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.carousel.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .parallax {
+            height: 300px;
+            background: url('your-image-url.jpg') no-repeat center center;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <h2>Carrusel de Imágenes</h2>
+    <div class="carousel">
+        <div><img src="image1.jpg" alt="Imagen 1"></div>
+        <div><img src="image2.jpg" alt="Imagen 2"></div>
+        <div><img src="image3.jpg" alt="Imagen 3"></div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.carousel').slick({
+                dots: true,
+                infinite: true,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 2000
+            });
+        });
+    </script>
+    <h2>Botón de Contacto a WhatsApp</h2>
+    <a href="https://wa.me/1234567890?text=Hola!%20Estoy%20interesado%20en%20más%20información" target="_blank">
+        <button>Contactar por WhatsApp</button>
+    </a>
+    <h2>Animación Parallax de Fondo</h2>
+    <div class="parallax"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/jarallax@1.12.7/dist/jarallax.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            jarallax(document.querySelectorAll('.parallax'), {
+                speed: 0.5
+            });
+        });
+    </script>
+    <h2>Lightbox de Imágenes</h2>
+    <div class="gallery">
+        <a href="image1-large.jpg" class="image-link"><img src="image1.jpg" alt="Imagen 1" width="100"></a>
+        <a href="image2-large.jpg" class="image-link"><img src="image2.jpg" alt="Imagen 2" width="100"></a>
+        <a href="image3-large.jpg" class="image-link"><img src="image3.jpg" alt="Imagen 3" width="100"></a>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.gallery').magnificPopup({
+                delegate: 'a',
+                type: 'image',
+                gallery: {
+                    enabled: true
+                }
+            });
+        });
+    </script>
+    <h2>Slider de Contenido</h2>
+    <div class="content-slider owl-carousel">
+        <div>Contenido 1</div>
+        <div>Contenido 2</div>
+        <div>Contenido 3</div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.content-slider').owlCarousel({
+                loop: true,
+                margin: 10,
+                nav: true,
+                items: 1,
+                autoplay: true,
+                autoplayTimeout: 3000,
+                autoplayHoverPause: true
+            });
+        });
+    </script>
+</body>
+</html>

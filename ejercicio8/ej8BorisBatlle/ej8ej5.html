@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Adivina el Numero</title>
+</head>
+<body>
+    <script>
+
+        let numeroAleatorio = Math.floor(Math.random() * 11);
+        let numeroUsuario;
+
+
+        do {
+            numeroUsuario = parseInt(prompt("Adivina el numero (entre 0 y 10):"));
+            if (numeroUsuario < numeroAleatorio) {
+                alert("Tu numero es menor que el numero a adivinar.");
+            } else if (numeroUsuario > numeroAleatorio) {
+                alert("Tu numero es mayor que el numero a adivinar.");
+            } else {
+                alert("Felicitaciones Has adivinado el numero.");
+            }
+        } while (numeroUsuario !== numeroAleatorio);
+    </script>
+</body>
+</html>

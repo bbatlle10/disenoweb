@@ -1,0 +1,59 @@
+.ejercicio1{
+    background-color: lightblue;
+    margin: 20px;
+    padding: 15px
+}
+.ejercicio2{
+    background-image: url("Karthus_0.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.ejercicio3{
+    border: 2px solid red;
+    border-radius: 10px;
+}
+.ejercicio4 p{
+    font-weight: bold;
+}
+.ejercicio4{
+    border: 2px solid black;
+    padding: 15px;
+}
+.seccionej5{
+    background-color: yellow;
+    text-align: center;
+}
+.ejercicio6{
+    border: 5px purple;
+    border-style: double;
+    background-color: gold;
+    margin: 40px;
+
+}
+.ejercicio7{
+    background-image: url("Karthus_0.jpg");
+    background-position: right bottom;
+    background-repeat: no-repeat;
+}
+.ejercicio8{
+    background-image: url("Karthus_0.jpg");
+    background-size: 50%;
+    background-repeat: repeat-y;
+}
+.ejercicio9{
+    background-color: aqua;
+    background-image: url("Karthus_0.jpg");
+    background-size: 20%;
+    background-repeat: repeat-y;
+    background-position: right top;
+}
+.boton{
+    background-color: beige;
+    margin: 5px;
+}
+.ejercicio10{
+    width: 50%;
+    border: 3px green;
+    border-style: dotted;
+    padding: 25px;
+}

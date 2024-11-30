@@ -1,0 +1,53 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+header h1 {
+    color: #3366CC;
+    font-size: 36px;
+}
+
+
+section p {
+    font-size: 18px;
+    color: #dd351f;
+}
+
+section p strong {
+    color: #8f0707;
+}
+
+
+
+h3 {
+    font-size: 22px;
+    color: #FF6600;
+}
+
+
+
+
+
+section h2 {
+    color: #3366CC;
+}
+article p {
+    font-size: 18px;
+    color: #4cdb0a;
+}
+
+article p:nth-of-type(2) {
+    color: #bb396b;
+    font-size: 16px;
+}
+article p:nth-of-type(3) {
+    color: #bb396b;
+    font-size: 16px;
+}
+
+.rosa {
+    color:pink ;
+}
+

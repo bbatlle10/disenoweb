@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Sitio Web de Noticias - Últimas Noticias</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header, nav, main, aside, footer {
+            padding: 20px;
+            margin: 10px;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+        }
+        nav {
+            background-color: #333;
+            text-align: center;
+            padding: 10px 0;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            display: inline-block;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        aside {
+            flex: 1;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <!-- Encabezado -->
+    <header>
+        <h1>Noticias 24/7</h1>
+        <img src="logotipo.png" alt="Logotipo de Noticias 24/7" width="100">
+    </header>
+
+    <!-- Navegación -->
+    <nav>
+        <a href="#nacional">Nacional</a>
+        <a href="#internacional">Internacional</a>
+        <a href="#deportes">Deportes</a>
+        <a href="#economia">Economía</a>
+    </nav>
+
+    <!-- Sección Principal -->
+    <main>
+        <!-- Artículos destacados -->
+        <section id="nacional">
+            <h2>Noticias Nacionales</h2>
+
+            <article>
+                <h3>Avances en la educación pública</h3>
+                <figure>
+                    <img src="educacion.jpg" alt="Avances en educación">
+                    <figcaption>El gobierno anuncia nuevas reformas en la educación.</figcaption>
+                </figure>
+                <p>El gobierno ha anunciado un nuevo conjunto de reformas para mejorar la educación pública, con mayor inversión en infraestructura y tecnología. <a href="articulo1.html">Leer más</a></p>
+            </article>
+
+            <article>
+                <h3>Plan de recuperación económica en marcha</h3>
+                <figure>
+                    <img src="economia.jpg" alt="Plan de recuperación económica">
+                    <figcaption>Se anuncia un plan de recuperación tras la crisis económica.</figcaption>
+                </figure>
+                <p>Con el objetivo de enfrentar la crisis económica, el gobierno ha implementado un plan que incluye medidas fiscales y apoyo a pequeñas empresas. <a href="articulo2.html">Leer más</a></p>
+            </article>
+        </section>
+
+        <!-- Publicidad -->
+        <aside>
+            <h2>Publicidad</h2>
+            <figure>
+                <img src="anuncio1.jpg" alt="Anuncio Publicitario">
+                <figcaption>Anuncio publicitario sobre un nuevo producto.</figcaption>
+            </figure>
+            <figure>
+                <img src="anuncio2.jpg" alt="Anuncio de servicios">
+                <figcaption>Anuncio de servicios financieros.</figcaption>
+            </figure>
+        </aside>
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>Contacto: bbatlle@uade.edu.ar | Teléfono: +123 456 7890</p>
+        <p><a href="politica.html">Política de Privacidad</a> | <a href="terminos.html">Términos de Uso</a></p>
+    </footer>
+
+</body>
+</html>

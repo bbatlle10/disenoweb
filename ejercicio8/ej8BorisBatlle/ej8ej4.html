@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Mayor y Menor de Numeros</title>
+</head>
+<body>
+    <script>
+        let numeros = [];
+        for (let i = 0; i < 5; i++) {
+            numeros.push(parseFloat(prompt("Ingrese el numero " + (i + 1) + ":")));
+        }
+        
+        
+        let mayor = Math.max(...numeros);
+        let menor = Math.min(...numeros);
+        
+        
+        document.write("<ul>");
+        document.write("<li>El numero mayor es " + mayor + "</li>");
+        document.write("<li>El numero menor es " + menor + "</li>");
+        document.write("</ul>");
+    </script>
+</body>
+</html>
